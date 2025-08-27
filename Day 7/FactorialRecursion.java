@@ -14,8 +14,7 @@ public class FactorialRecursion {
         System.out.println("Enter  a Number: ");
         int n = inp.nextInt();
         int result =Fact(n);
-        System.out.println("The sum of 1 to " + n + " is " + result);
-    }
+        System.out.println("The factorial of " + n + " is " + result);    }
 }
 
 
