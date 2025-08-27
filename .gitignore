@@ -1,1 +1,4 @@
 .vscode/
+patterns.class
+Parameterized.class
+FunctionalRecursion.class
