@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <input type="text" id="numberInput1">
+    <br>
+    <button onClick="getTable()">Get Table</button>
+
+    <input type="text" id="numberInput">
+    <button onClick="getSquare()">Get Square</button>
+    <div id="result"></div>
+
+    <input type="text" id="num1" placeholder="Enter a number">
+    <br>
+    <input type="text" id="num1" placeholder="Enter a number">
+    <br>
+    <button onClick="findMax()">Find Max</button>
+    <br>
+    <div id="result1"></div>
+    <script>
+        function getSquare() {
+            const number = document.getElementById("numberInput").value;
+            const square = number * number;
+            document.getElementById("result").innerText = "Square: " + square;
+        }
+
+        function findMax(){
+            const num1 = Number(document.getElementById("num1").value);
+            const num2 = Number(document.getElementById("num2").value);
+            const max = Math.max(num1, num2);
+            document.getElementById("result1").innerHTML = "Max: " + max;
+        }
+        function getTable() {
+             number = document.getElementById("numberInput1").value;
+             output=''
+             for(i=1;i<=10;i++){
+                output+=number + " * " + i + " = " + (number*i) + "<br>"
+             }
+             document.getElementById("result").innerHTML = output;
+        }
+    </script>
+</body>
+</html>     
