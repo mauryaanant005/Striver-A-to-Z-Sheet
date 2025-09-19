@@ -13,6 +13,7 @@ public class KthPosition {
         for (int i = 0; i < n; i++) {
             arr[i] = inp.nextInt(); // storing the user input in the array
         }
+        
         System.out.print("Unsorted Array :");
         for (int i = 0; i < n; i++) {
             System.out.println(arr[i] + " ");// displaying the array elements
