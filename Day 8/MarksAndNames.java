@@ -4,12 +4,11 @@ public class MarksAndNames {
     static Scanner inp = new Scanner(System.in);
 
     public static void main(String[] args) {
-        System.out.println("Enter the Number of elements: "); // taking user input for number element he wants eg.5 :
-                                                              // 1,2,3,4,5
+        System.out.println("Enter the Number of elements: "); 
+                                                             
         int n = inp.nextInt();
-        System.out.println("Enter the marks: ");// the user will be able to enter only the n number elements
-        int marks[] = new int[n]; // creating an array with the size of n elements eg n=5 so the memory will be
-                                // allocated for 5 integers
+        System.out.println("Enter the marks: ");
+        int marks[] = new int[n]; 
 
         
 
@@ -21,7 +20,7 @@ public class MarksAndNames {
         String names[]= new String[n];
         for (int i = 0; i < n; i++) {
             
-            names[i] = inp.next();// storing the user input in the array
+            names[i] = inp.next();
         }
         
         System.out.println("list of unsorted students names with there marks: :");
